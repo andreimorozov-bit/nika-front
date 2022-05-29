@@ -26,12 +26,12 @@ onMounted(async () => {
   <div class="flex flex-col w-full">
     <BaseDividerX />
     <div
-      class="flex flex-row flex-wrap justify-around sm:justify-start py-2 sm:pl-[170px] sm:pr-[72px]"
+      class="flex flex-row flex-wrap justify-evenly md:justify-start px-2 py-2 sm:px-12 md:pl-[170px] md:pr-[72px]"
     >
       <div
         v-for="photo in state.photos"
         :key="photo.id"
-        class="mx-2 my-4 sm:mx-[21px] sm:my-[24px]"
+        class="mx-2 my-4 md:mx-[21px] md:my-[24px]"
       >
         <PhotoItem :photo="photo" />
       </div>

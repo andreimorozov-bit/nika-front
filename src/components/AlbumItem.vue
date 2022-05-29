@@ -31,7 +31,7 @@ const handleUserClick = () => {
           v-if="state.isOpen"
         />
       </div>
-      <div class="px-2 text-base sm:text-lg">
+      <div class="px-2 sm:px-[24px] text-base sm:text-lg">
         {{ album?.title }}
       </div>
     </div>

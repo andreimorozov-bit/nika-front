@@ -25,9 +25,12 @@ onMounted(() => {
     >
       <FavoriteItemEmpty />
     </div>
-    <div v-if="state.photos.length > 0" class="grid grid-cols-2 sm:grid-cols-3">
+    <div
+      v-if="state.photos.length > 0"
+      class="grid grid-cols-2 w-full sm:w-fit justify-around sm:justify-center justify-items-center px-2 sm:grid-cols-3"
+    >
       <div v-for="photo in state.photos" :key="photo.id">
-        <div class="flex flex-row px-2 py-4 sm:p-[21px]">
+        <div class="flex flex-row px-2 py-2 sm:p-[21px]">
           <FavoriteItem :photo="photo" />
         </div>
       </div>

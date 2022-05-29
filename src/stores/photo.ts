@@ -51,7 +51,6 @@ export const usePhotoStore = defineStore({
       } else {
         this.addFavoritePhoto(photo);
       }
-      console.log(this.favoritePhotos);
     },
 
     setFavoritePhotos() {

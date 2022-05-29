@@ -1,9 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import placeholderImage from '/images/FavoritePlaceholderImage.png';
+</script>
 
 <template>
   <div class="flex flex-col w-full p-2 justify-center items-center">
     <div class="">
-      <img :src="'/images/FavoritePlaceholderImage.png'" />
+      <img :src="placeholderImage" />
     </div>
     <div class="py-10">
       <h1 class="text-[1.35rem] text-center leading-8 font-bold">
